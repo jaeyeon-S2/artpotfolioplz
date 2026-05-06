@@ -105,7 +105,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\KUMA_LAB\\Desktop\\b_IR2qucnpluS 0429\\frontend",
+    "outputFileTracingRoot": "C:\\Users\\KUMA_LAB\\Desktop\\b_IR2qucnpluS 0429",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -305,12 +305,12 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "C:\\Users\\KUMA_LAB\\Desktop\\b_IR2qucnpluS 0429\\frontend"
+      "root": "C:\\Users\\KUMA_LAB\\Desktop\\b_IR2qucnpluS 0429"
     },
     "distDirRoot": ".next"
   },
   "appDir": "C:\\Users\\KUMA_LAB\\Desktop\\b_IR2qucnpluS 0429\\frontend",
-  "relativeAppDir": "",
+  "relativeAppDir": "frontend",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",
