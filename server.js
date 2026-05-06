@@ -8,6 +8,7 @@ const productionStandaloneServer = path.join(
   backendRoot,
   'dist',
   'standalone',
+  'frontend',
   'server.js',
 )
 
@@ -18,7 +19,7 @@ process.env.APP_UPLOADS_DIR =
 
 if (!fs.existsSync(productionStandaloneServer)) {
   console.error(
-    'Production build not found. Run npm install at the repository root so the postinstall build can create backend/dist/standalone.',
+    'Production build not found. Run npm install at the repository root so the postinstall build can create backend/dist/standalone/frontend/server.js.',
   )
   process.exit(1)
 }
