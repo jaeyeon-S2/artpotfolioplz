@@ -1,0 +1,180 @@
+[
+  {
+    "route": "/profile",
+    "firstLoadUncompressedJsBytes": 1104081,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\0gfpk8ouhkjfq.js",
+      ".next\\static\\chunks\\0audv-r89qq9k.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/webtoon/[projectId]",
+    "firstLoadUncompressedJsBytes": 712774,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\136xgx~_9ed2v.js",
+      ".next\\static\\chunks\\0x-e_iepnyol4.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/personal",
+    "firstLoadUncompressedJsBytes": 705447,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\0wr8tr-nasas3.js",
+      ".next\\static\\chunks\\0d_wbj7wrp2_~.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/works",
+    "firstLoadUncompressedJsBytes": 705245,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\0vm_is9z9i5zt.js",
+      ".next\\static\\chunks\\0d_wbj7wrp2_~.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/webtoon",
+    "firstLoadUncompressedJsBytes": 673752,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\05~zh1cg7v8uz.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 671947,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\0v.svl6-3zg5d.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/guestbook",
+    "firstLoadUncompressedJsBytes": 671683,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\0ui_qzc86~pt-.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/webtoon/[projectId]/episodes/[episodeId]/preview",
+    "firstLoadUncompressedJsBytes": 669249,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0j.~xk1ohi9er.js",
+      ".next\\static\\chunks\\0cako~0ndo3k_.js",
+      ".next\\static\\chunks\\0ji23yhgo_0r6.js",
+      ".next\\static\\chunks\\10shdb02u9-wd.js",
+      ".next\\static\\chunks\\07sh0e5agagnc.js",
+      ".next\\static\\chunks\\0v-q7q5xd8dlg.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  },
+  {
+    "route": "/_not-found",
+    "firstLoadUncompressedJsBytes": 516870,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\0iwz~d34oj_si.js",
+      ".next\\static\\chunks\\12-2h.4d.g7-u.js",
+      ".next\\static\\chunks\\0yb2wil16uz6h.js",
+      ".next\\static\\chunks\\0who~2qxg_wv7.js",
+      ".next\\static\\chunks\\0o59ac8426icc.js",
+      ".next\\static\\chunks\\0vkgb7xyv-nko.js",
+      ".next\\static\\chunks\\0pqt~8bl3ukh4.js",
+      ".next\\static\\chunks\\turbopack-17ial8x9_r9-t.js"
+    ]
+  }
+]
