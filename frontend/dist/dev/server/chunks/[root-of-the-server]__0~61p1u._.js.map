@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 70, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/KUMA_LAB/Desktop/b_IR2qucnpluS%200429/frontend/proxy.ts"],"sourcesContent":["import { NextResponse, type NextRequest } from 'next/server'\r\n\r\nexport function proxy(_request: NextRequest) {\r\n  return NextResponse.next()\r\n}\r\n\r\nexport const config = {\r\n  matcher: [\r\n    '/((?!_next/static|_next/image|favicon.ico|.*\\\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',\r\n  ],\r\n}"],"names":["proxy","_request","next","config","matcher"],"mappings":";;;;;;AAAA;;AAEO,SAASA,MAAMC,QAAqB;IACzC,OAAO,8IAAY,CAACC,IAAI;AAC1B;AAEO,MAAMC,SAAS;IACpBC,SAAS;QACP;KACD;AACH"}}]
+}

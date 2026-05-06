@@ -1,0 +1,23 @@
+{
+  "/(portfolio)/guestbook/page": "/guestbook",
+  "/(portfolio)/page": "/",
+  "/(portfolio)/personal/page": "/personal",
+  "/(portfolio)/profile/page": "/profile",
+  "/(portfolio)/webtoon/[projectId]/episodes/[episodeId]/preview/page": "/webtoon/[projectId]/episodes/[episodeId]/preview",
+  "/(portfolio)/webtoon/[projectId]/page": "/webtoon/[projectId]",
+  "/(portfolio)/webtoon/page": "/webtoon",
+  "/(portfolio)/works/page": "/works",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/chat/route": "/api/chat",
+  "/api/comments/route": "/api/comments",
+  "/api/health/route": "/api/health",
+  "/api/posts/[id]/route": "/api/posts/[id]",
+  "/api/posts/route": "/api/posts",
+  "/api/profile/route": "/api/profile",
+  "/api/upload/file/route": "/api/upload/file",
+  "/api/upload/route": "/api/upload",
+  "/api/webtoon/[projectId]/route": "/api/webtoon/[projectId]",
+  "/api/webtoon/route": "/api/webtoon",
+  "/uploads/[filename]/route": "/uploads/[filename]"
+}

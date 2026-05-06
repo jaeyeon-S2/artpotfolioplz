@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(portfolio)/layout,_N_T_/(portfolio)/guestbook/layout,_N_T_/(portfolio)/guestbook/page,_N_T_/guestbook"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHBvcnRmb2xpbyk/guestbook/__PAGE__",
+    "/!KHBvcnRmb2xpbyk/guestbook",
+    "/!KHBvcnRmb2xpbyk",
+    "/_index",
+    "/_head"
+  ]
+}
