@@ -10,7 +10,7 @@ const { mkdir, writeFile } = require('fs/promises')
 require('dotenv').config()
 
 const repoRoot = path.resolve(__dirname, '..')
-const frontendDistDir = path.join(repoRoot, 'frontend', 'dist')
+const frontendDistDir = path.join(__dirname, 'dist')
 const uploadsDir = process.env.APP_UPLOADS_DIR || path.join(repoRoot, 'uploads')
 const dataDir = process.env.APP_DATA_DIR || path.join(repoRoot, 'data')
 
