@@ -1,32 +1,80 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
-import { useChat } from '@ai-sdk/react'
-import { DefaultChatTransport } from 'ai'
+import { useEffect, useRef, useState } from 'react'
 import { Send, Bot, User } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
+type ChatMessage = {
+  id: string
+  role: 'user' | 'assistant'
+  content: string
+}
+
 export function Chatbot() {
   const [input, setInput] = useState('')
+  const [messages, setMessages] = useState<ChatMessage[]>([])
+  const [status, setStatus] = useState<'idle' | 'streaming'>('idle')
   const messagesEndRef = useRef<HTMLDivElement>(null)
-  
-  const { messages, sendMessage, status } = useChat({
-    transport: new DefaultChatTransport({ api: '/api/chat' }),
-  })
 
-  const isLoading = status === 'streaming' || status === 'submitted'
+  const isLoading = status === 'streaming'
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!input.trim() || isLoading) return
-    sendMessage({ text: input })
+
+    const userMessage: ChatMessage = {
+      id: crypto.randomUUID(),
+      role: 'user',
+      content: input.trim(),
+    }
+
+    setMessages((current) => [...current, userMessage])
     setInput('')
+
+    setStatus('streaming')
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: userMessage.content,
+          messages: [...messages, userMessage],
+        }),
+      })
+
+      const payload = await response.json()
+      const replyText =
+        typeof payload.message === 'string'
+          ? payload.message
+          : '응답을 가져오지 못했습니다.'
+
+      setMessages((current) => [
+        ...current,
+        {
+          id: crypto.randomUUID(),
+          role: 'assistant',
+          content: replyText,
+        },
+      ])
+    } catch (error) {
+      setMessages((current) => [
+        ...current,
+        {
+          id: crypto.randomUUID(),
+          role: 'assistant',
+          content: '현재 챗봇 응답을 불러올 수 없습니다.',
+        },
+      ])
+      console.error('Chat request failed:', error)
+    } finally {
+      setStatus('idle')
+    }
   }
 
   return (
@@ -78,16 +126,7 @@ export function Chatbot() {
                         : 'bg-muted'
                     }`}
                   >
-                    {message.parts.map((part, index) => {
-                      if (part.type === 'text') {
-                        return (
-                          <p key={index} className="text-sm whitespace-pre-wrap">
-                            {part.text}
-                          </p>
-                        )
-                      }
-                      return null
-                    })}
+                    <p className="text-sm whitespace-pre-wrap">{message.content}</p>
                   </div>
                 </div>
               ))}

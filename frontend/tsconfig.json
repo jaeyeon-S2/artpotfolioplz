@@ -17,23 +17,25 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "next/link": [
+        "./src/next/link.tsx"
+      ],
+      "next/image": [
+        "./src/next/image.tsx"
+      ],
+      "next/navigation": [
+        "./src/next/navigation.tsx"
       ]
     }
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
+    "src/**/*.d.ts"
   ],
   "exclude": [
     "node_modules"

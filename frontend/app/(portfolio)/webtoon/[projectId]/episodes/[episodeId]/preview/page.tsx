@@ -1,8 +1,6 @@
-import { notFound } from 'next/navigation'
-import { getWebtoonProjectById } from '@/lib/local-db'
+import { useEffect, useMemo, useState } from 'react'
+import { useParams } from 'next/navigation'
 import { EpisodePreviewViewer } from './episode-preview-viewer'
-
-export const dynamic = 'force-dynamic'
 
 function getFileLabel(url: string, index: number): string {
   const fileName = url.split('/').pop()
@@ -45,25 +43,65 @@ function getEpisodePages(episode: {
   return []
 }
 
-export default async function WebtoonEpisodePreviewPage({
-  params,
-}: {
-  params: Promise<{ projectId: string; episodeId: string }>
-}) {
-  const { projectId, episodeId } = await params
-  const project = await getWebtoonProjectById(projectId)
+type WebtoonProject = {
+  id: string
+  episodes: Array<{
+    id: string
+    episode_number: number
+    title: string | null
+    thumbnail_url: string | null
+    reading_mode?: 'scroll' | 'page'
+    manuscript_pages?: string[]
+    manuscript_url?: string | null
+  }>
+}
+
+export default function WebtoonEpisodePreviewPage() {
+  const params = useParams<{ projectId: string; episodeId: string }>()
+  const [project, setProject] = useState<WebtoonProject | null>(null)
+
+  useEffect(() => {
+    if (!params.projectId) {
+      return
+    }
+
+    let cancelled = false
+
+    fetch(`/api/webtoon/${params.projectId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (!cancelled) {
+          setProject(data?.id ? data : null)
+        }
+      })
+      .catch((error) => {
+        console.error('Failed to load webtoon preview data:', error)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [params.projectId])
 
   if (!project) {
-    notFound()
+    return (
+      <div className="min-h-screen bg-background p-4 md:p-8 text-foreground">
+        원고를 불러오는 중...
+      </div>
+    )
   }
 
-  const episode = project.episodes.find((item) => item.id === episodeId)
+  const episode = project.episodes.find((item) => item.id === params.episodeId)
 
   if (!episode) {
-    notFound()
+    return (
+      <div className="min-h-screen bg-background p-4 md:p-8 text-foreground">
+        원고를 찾을 수 없습니다.
+      </div>
+    )
   }
 
-  const pages = getEpisodePages(episode)
+  const pages = useMemo(() => getEpisodePages(episode), [episode])
   const readingMode = episode.reading_mode === 'page' ? 'page' : 'scroll'
 
   return (

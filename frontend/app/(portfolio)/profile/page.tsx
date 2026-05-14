@@ -1,11 +1,46 @@
-import { getProfile } from '@/lib/local-db'
+import { useEffect, useState } from 'react'
 import { ProfileEditor } from './profile-editor'
 import { Chatbot } from '@/components/chatbot'
 
-export const dynamic = 'force-dynamic'
+type Profile = {
+  id: string
+  profile_image: string | null
+  one_line_intro: string | null
+  career: string | null
+  contact: string | null
+  created_at: string
+  updated_at: string
+}
 
-export default async function ProfilePage() {
-  const profile = await getProfile()
+export default function ProfilePage() {
+  const [profile, setProfile] = useState<Profile | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+
+    fetch('/api/profile')
+      .then((response) => response.json())
+      .then((data) => {
+        if (!cancelled) {
+          setProfile(data)
+        }
+      })
+      .catch((error) => {
+        console.error('Failed to load profile:', error)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  if (!profile) {
+    return (
+      <div className="min-h-full p-6 md:p-8 lg:p-12 text-[#003366]">
+        프로필을 불러오는 중...
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-full p-6 md:p-8 lg:p-12">
