@@ -12,8 +12,8 @@
     "mirror:frontend-dist": "node frontend/scripts/copy-dist.mjs",
     "build": "npm run build:frontend && npm run mirror:frontend-dist",
     "postinstall": "npm run build",
-    "start": "node backend/server.js",
-    "dev:backend": "node backend/server.js",
+    "start": "node server.js",
+    "dev:backend": "node server.js",
     "dev:frontend": "npm --prefix frontend run dev",
     "dev": "npm run dev:backend & npm run dev:frontend"
   },
